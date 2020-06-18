@@ -1,0 +1,8 @@
+During this workshop, the following topics I have learned about were the reason for the significant time difference between the copy and move operations. During the assignment while creating move operations I learned that move operators are more efficient and optimized than copy operators because they move the references of the object to the next object and erase the pointers of the old object. With copy constructors they individually copy each value to the new object. During this assignment, the biggest problem I had was working with the copy constructor. I had used memcpy to help efficiently transfer the memory over but, memcopy wasn’t transferring the last part of the array. After debugging I realized since it was an array, I could just loop though the arrays and assign each string with the value of the copy string. Since it is a string we can copy the value with the string copy constructor without any trouble. 
+
+
+Quiz One Reflection
+3. Which of the following constructs receive an rvalue reference as the argument?
+My answer: copy-assignment operator.
+The right answer: move-assignment operator or move-constructor.
+
